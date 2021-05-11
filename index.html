@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Student GradeBook </title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="gradeBook.js"></script>
+    <link rel="stylesheet" href="gradeBook.css">
+
+</head>
+
+
+<body class="p-3 mb-2 bg-secondary text-white">
+
+<h1 class="col-lg-6 offset-lg-4">Student GradeBook</h1><br>
+
+<form class="col-lg-6 offset-lg-4">
+    <label for="fname">First name: </label>
+    <input type="text"
+           id="fname"
+           name="fname"><br><br>
+    <label for="lname">Last name: </label>
+    <input type="text"
+           id="lname"
+           name="lname"><br><br>
+    <label for="pointsEarned">Points Earned: </label>
+    <input type="number"
+           id="pointsEarned"
+           name="pointsEarned"><br><br>
+    <label for="pointsPossible">Points Possible: </label>
+    <input type="number"
+           id="pointsPossible"
+           name="pointsPossible"><br><br>
+
+
+    <button class="btn btn-outline-dark"
+            id="submit"
+            type="submit">Submit</button>
+
+
+
+<br>
+
+<div>
+<p class="col-lg-6 offset-lg-4"
+   id="resultsOutput"></p>
+<p class="col-lg-6 offset-lg-4"
+   id="letterOutput"></p>
+<p class="col-lg-6 offset-lg-4"
+   id="percentOutput"></p>
+</div>
+
+<br>
+
+<button class=" btn btn-outline-dark  col-xl-500px offset-lg-4" id="sortName" type="button"> Sort by Name </button>
+<button class=" btn btn-outline-dark col-lg-500px offset-lg-0" id="sortpercent" type="button">Sort by Percentage</button>
+
+
+</form>
+</body>
+
+</html>
